@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-const router = Router('../src/controllers/authControllers')
-import {BrowserRouter, Route, Switch} from "react-router-dom"
+const {Router} = require('express')
+const authControllers = require('../src/controllers/authControllers')
+
+const router = Router()
 
 router.get('/places', authControllers.places_get)
 router.post('/places', authControllers.places_post)
 router.get('/food', authControllers.food_get)
-router.post('/foods', authControllers.food_post)
+router.post('/food', authControllers.food_post)
 
 module.exports= router
 
