@@ -8,3 +8,5 @@ router.get('/food', authControllers.food_get)
 router.post('/foods', authControllers.food_post)
 
 module.exports= router
+
+
