@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const authRoutes = require('./src/Routes/authRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -22,8 +22,13 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   })
 
 
-
+  app.get('/', (req, res) => res.render('home'));
+  app.get('/food', (req, res) => res.render('food'));
+  app.use(authRoutes);
 
   app.listen(port, () =>{
     console.log(`server is running on port: ${port}`);
 });
+
+
+// Here is the magic comment 
