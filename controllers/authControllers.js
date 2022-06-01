@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken')
-const User = require('../models/comments')
+const User = require('../models/user.models')
 
-const handleErrors = (err, comerr ) =>{
-    console.log(comerr.message, comerr.code)
-    let comErrors = {comment: ''}
+const handleErrors = (err,  ) =>{
+    // console.log(comerr.message, comerr.code)
+    // let comErrors = {comment: ''}
     let errors = {email: '', password: ''}
     if (err.message === 'incorrect email'){
     errors.email =  'That email is not registered'
@@ -34,7 +34,7 @@ const createToken = (id) =>{
 module.exports.signup_get = (req,res) => {
     res.render('signup')
 }
-module.exports.signup_get = (req,res) => {
+module.exports.login_get = (req,res) => {
     res.render('login')
 }
 
