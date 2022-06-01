@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const authRoutes = require('./src/Routes/authRoutes');
+const authRoutes = require('./Routes/authRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -21,9 +21,10 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
     console.log("MongoDB is connected");
   })
 
+  const usersRouter = require('./Routes/user');
 
   app.get('/', (req, res) => res.render('home'));
-  app.get('/food', (req, res) => res.render('food'));
+  app.get('/user', usersRouter);
   app.use(authRoutes);
 
   app.listen(port, () =>{

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let User = require('../models/comments');
+let User = require('../models/user.models');
 
 
 router.route('/').get((req, res) => {
