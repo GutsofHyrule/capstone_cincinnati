@@ -8,9 +8,12 @@ const Navbar = (props) => {
     <a href='/' className='cincy-logo'>Cincinnati</a>
         <ul>
             <li><Link to='/'></Link></li>
-            <li className='dropdown-menu'><Link to='/places'>Places</Link></li>
-            <li><Link to='/food'>Food</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to ='/contact'>Contact</Link></li>
+            <li><Link to='/places'>Places</Link></li>
             <li><Link to ='/events'>Events</Link></li>
+            
+            
         </ul>
     </div>
         </nav>

@@ -1,18 +1,17 @@
 const router = require('express').Router();
-let Amuse = require('../models/amusement.models');
+let Comments = require('../models/comment.model');
 
 router.route('/').get((req, res) => {
-    Amuse.find()
-    .then(amuses => res.json(amuses))
+    Comments.find()
+    .then(comments => res.json(comments))
     .catch(err => res.status(400).json('Error: ' + err));
 });
+
 router.route('/add').post((req, res) => {
-    const name = req.body.name;
     const description = req.body.description;
-    const price = req.body.price;
-    const newAmuse = new Amuse({name, description, price});
-    newAmuse.save()
-    .then(() => res.json('Amuse Added!'))
+    const newComment = new Comments({description});
+    newComment.save()
+    .then(() => res.json('Comment Added!'))
     .catch(err => res.status(400).json('Error: '+ err));
 });
 module.exports = router;

@@ -21,6 +21,9 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
 
   const amuseRouter = require('./Routes/amusement')
   app.use('/amusements', amuseRouter)
+
+  const commentRouter = require('./Routes/comment')
+  app.use('/comment', commentRouter)
   
   app.listen(port, () =>{
   
