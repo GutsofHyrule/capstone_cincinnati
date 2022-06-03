@@ -4,6 +4,8 @@ import "./style.spence.css"
 const About = () => {
     return (
         <div className="container">
+        <div>
+        </div>
             <h4 className='center'>History</h4>
             <p className="center">this place is cool</p>
             <div className="parent">

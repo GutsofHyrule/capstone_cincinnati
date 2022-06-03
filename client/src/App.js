@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Places from './components/Places'
 import Events from './components/Events'
+import Home from './components/Home'
 class App extends Component{
   render(){
     return(
@@ -12,6 +13,7 @@ class App extends Component{
         <div className="App">
           <Navbar />
           <Switch>
+            <Route path='/Home' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/places' component = {Places} />
             <Route path='/events' component={Events} />

@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="container">
                 <a href='/' className='cincy-logo'>Cincinnati</a>
                 <ul className='right'>
-                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/Home'>Home</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                     <li><Link to='/places'>Places</Link></li>

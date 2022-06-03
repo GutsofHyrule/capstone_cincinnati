@@ -1,0 +1,94 @@
+html{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+#background-video {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  h1, h2 {
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    margin-top: 30vh;
+  }
+  
+  h2 { font-size: 3rem; }
+
+  /* @media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
+} */
+.curve{
+    background-color: rgb(241, 224, 199);
+    width: 30vw;
+    height: 20vh;
+    /* z-index: 2; */
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: -30px;
+}
+
+.curve1{
+    background-color: rgb(241, 224, 199);
+    width: 40vw;
+    height: 20vh;
+    /* z-index: 2; */
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+
+.curve2{
+    background-color: rgb(241, 224, 199);
+    width: 40vw;
+    height: 20vh;
+    /* z-index: 2; */
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 600px;
+}
+.curve3{
+    background-color: rgb(241, 224, 199);
+    width: 30vw;
+    height: 20vh;
+    /* z-index: 2; */
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 990px;
+}
+img{
+  width: 100vw;
+  height:70vh;
+  margin-top: -270px;
+  position: absolute;
+  margin-left: -15px;
+}
+.logo{
+  position: fixed;
+  color: rgb(0, 0, 0);
+  z-index: 5;
+  margin-top: -78vh;
+  font-size: large;
+  box-shadow: 10px 20px 10px black;
+  margin-left: 1vw;
+}
