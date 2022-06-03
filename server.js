@@ -16,7 +16,7 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   
     console.log("MongoDB is connected");
   })
-  const usersRouter = require('./Routes/user');
+  const usersRouter = require('./Routes/users');
   app.use('/user', usersRouter);
 
   const amuseRouter = require('./Routes/amusement')
