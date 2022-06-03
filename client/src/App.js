@@ -6,7 +6,7 @@ import About from './components/About'
 import Places from './components/Places'
 import Events from './components/Events'
 import Home from './components/Home'
-import Contact from './components/contact'
+import Contact from './components/Contact'
 class App extends Component{
   render(){
     return(
