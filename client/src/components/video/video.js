@@ -5,7 +5,7 @@ import "../style.Habil.css"
 class MyVideoComponent extends React.Component {
   render() {
     return (
-      <video width="100%" height="100%" autoPlay loop>
+      <video width="100%" height="100%" autoPlay loop muted>
         <source src={MyVideo} type="video/mp4" />
         
       </video>
