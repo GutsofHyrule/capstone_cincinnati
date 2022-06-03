@@ -10,7 +10,7 @@ const Home = () => {
 
     
 <MyVideoComponent/>
-    <div className="container-fluid"><img  src={myImage} alt="" srcSet=""/></div>
+    <div className="container-fluid"><img  src={myImage} alt="" srcset=""/></div>
 
 
 </div>
