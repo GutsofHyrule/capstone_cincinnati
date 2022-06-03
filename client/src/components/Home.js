@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.Habil.css"
 import MyVideoComponent from "./video/video";
-import myImage from "./video/cincnewy.png"
+import myImage from "./video/new edited white.png"
 
 const Home = () => {
     return(
@@ -11,7 +11,7 @@ const Home = () => {
     
 <MyVideoComponent/>
     <div className="container-fluid"><img  src={myImage} alt="" srcset=""/></div>
-
+        
 
 </div>
     )

@@ -2,7 +2,7 @@ html{
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
 }
-#background-video {
+video {
   width: 100vw;
   height: 80vh;
   object-fit: cover;
@@ -78,9 +78,9 @@ h2 { font-size: 3rem; }
 }
 img{
 width: 103vw;
-height:70vh;
+height:50vh;
 margin-top: -43vh;
-position: fixed;
+/* position: fixed; */
 margin-left: -15px;
 }
 .logo{
