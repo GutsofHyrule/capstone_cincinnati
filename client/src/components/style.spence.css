@@ -6,4 +6,7 @@
     grid-row-gap: 0px;
     }
     
-    .div1 { grid-area: 2 / 2 / 5 / 5; }
+    .div1 { grid-area: 2 / 2 / 5 / 5; 
+    border: solid black 2px;
+    box-shadow: 5px 5px 10px black;
+    }
