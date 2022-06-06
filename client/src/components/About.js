@@ -3,17 +3,19 @@ import "./style.spence.css"
 
 const About = () => {
     return (
-        <div className="container">
-        <div>
-        </div>
-            <h4 className='center'>History</h4>
-            <p className="center">this place is cool</p>
-            <div className="parent">
-                <div className="div1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam unde excepturi quibusdam inventore! Rem maxime inventore recusandae assumenda excepturi numquam perspiciatis? Beatae maxime placeat dolor! Ab nam rerum at.</p>
+
+        
+        <div className="container-fluid">
+        <div class="parent">
+        <div class="div1 container">
+                 <p className="center">About Cincinnanti</p>
                 </div>
-            </div>
+                <div className="div2 ">
+                    <p>Cincinnati is a city with rich history and a promising future. From its roots as a small town to the present as a metropolis with activities around every corner. Activities such as glow, Bierfest, Cincinnati Comic Expo, Bunberry and many more. With our historic land marks such as fountain square, Finnlay Market, and Cincinnati Music Hall. Please be a part of Cincinnati history.</p>
+                </div>
+                </div>
         </div>
+        
     )
 }
 
