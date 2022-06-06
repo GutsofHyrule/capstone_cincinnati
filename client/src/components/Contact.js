@@ -1,11 +1,11 @@
 import React from 'react';
+import "./style.Karim.css"
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
-    reset,
-    formState: { errors }
+    reset
   } = useForm();
   
   const onSubmit = async (data) => {
@@ -58,4 +58,5 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default (Contact)
+
