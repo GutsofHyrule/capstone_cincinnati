@@ -1,8 +1,8 @@
 const router = require('express').Router();
-let Amuse = require('../models/amusement.models');
+let Event = require('../models/event.models');
 
 router.route('/').get((req, res) => {
-    Amuse.find()
+    Event.find()
     .then(amuses => res.json(amuses))
     .catch(err => res.status(400).json('Error: ' + err));
 });
@@ -11,9 +11,9 @@ router.route('/add').post((req, res) => {
     const description = req.body.description;
     const price = req.body.price;
     const image = req.body.imageUrl;
-    const newAmuse = new Amuse({name, description, price, imageUrl});
-    newAmuse.save()
-    .then(() => res.json('Amuse Added!'))
+    const newEvent = new Event({name, description, price, image});
+    newEvent.save()
+    .then(() => res.json('Event Added!'))
     .catch(err => res.status(400).json('Error: '+ err));
 });
 module.exports = router;
