@@ -1,4 +1,5 @@
 import React from 'react'
+import "./style.spence.css"
 
 
 const Contact = () => {
@@ -7,7 +8,7 @@ return (
 
 <div className="container">
   <div className="hero">
-    <form>
+    <form className="form">
       <div className="row">
         <div className="input-group">
           <input type="text" id= "name" required/>
