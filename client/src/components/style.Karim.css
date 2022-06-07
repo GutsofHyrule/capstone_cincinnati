@@ -16,7 +16,13 @@
     align-items: center;
     justify-content: center;
 
+
 } 
+
+.form {
+    box-shadow: 1px 5px 10px 10px rgba(0, 0, 0, 0.5);
+   
+}
 
 
 form{
@@ -62,6 +68,10 @@ button{
     cursor: pointer;
 }
 
+.button {
+    font-size: 15px;
+}
+
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -77,4 +87,5 @@ textarea:valid~label{
 
 .row input-group{
     flex-basis: 48%;
+    
 }
