@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.Karim.css">
+  <script src="https://kit.fontawesome.com/3a32ef72e8.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+<body>
+  <div class="hero">
+    <form class="form"> 
+      <div class="row">
+        <div class="input-group">
+          <input type="text" id= "name" required>
+          <label for=""><i class="fa-solid fa-user"></i>Your Name</label>
+          </div>
+    
+          <div class="input-group">
+            <input type="text" id= "number" required>
+            <label for=""><i class="fa-solid fa-phone"></i>Phone number</label>
+            </div>
+      </div>
+
+        <div class="input-group">
+          <input type="text" id= "email" required>
+          <label for=""><i class="fa-solid fa-envelope"></i>Email</label>
+          </div>
+
+          <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for=""><i class="fa-solid fa-message"></i>Your Message</label>
+            </div>
+
+        <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+<!-- import React from 'react';
+import "./style.Karim.css"
+
+const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    reset
+  } = useForm();
+  
+  const onSubmit = async (data) => {
+    const { name, email} = data;
+    
+    console.log('Name: ', name);
+    console.log('Email: ', email);
+  };
+
+  return (
+      <div>
+      <div className='ContactForm'>
+    <div className='content'>
+            <div className='contact-us'>
+            <h4 className='center'>Contact Us</h4>
+              <form id='get-in-touch' onSubmit={handleSubmit(onSubmit)} noValidate>
+                
+                <div className='form-row'>
+                  <div className='name'>
+                  <label className="label">Name:</label>
+                    <input
+                      type='name'
+                     required
+                      className='form-control formInput'
+                      placeholder='Name'
+                    ></input>
+                  </div>
+                </div>
+                
+                <div className='formRow'>
+                  <div className='email'>
+                  <label className="label">Email: </label>
+                    <input
+                      type='email'
+                      name='subject'
+                      className='form-control formInput'
+                      placeholder='Email'
+                    ></input>
+                  </div>
+                </div>
+
+                <button className='submit-btn' type='submit'>
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          </div>
+          </div>
+  );
+};
+
+export default (Contact)-->
+

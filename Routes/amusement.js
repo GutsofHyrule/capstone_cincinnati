@@ -10,7 +10,8 @@ router.route('/add').post((req, res) => {
     const name = req.body.name;
     const description = req.body.description;
     const price = req.body.price;
-    const newAmuse = new Amuse({name, description, price});
+    const image = req.body.imageUrl;
+    const newAmuse = new Amuse({name, description, price, imageUrl});
     newAmuse.save()
     .then(() => res.json('Amuse Added!'))
     .catch(err => res.status(400).json('Error: '+ err));
