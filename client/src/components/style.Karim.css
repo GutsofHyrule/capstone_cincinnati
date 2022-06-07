@@ -78,3 +78,7 @@ textarea:valid~label{
 .row input-group{
     flex-basis: 48%;
 }
+
+textarea{
+    height: 200px;
+}
