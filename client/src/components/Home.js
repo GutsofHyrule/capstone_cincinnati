@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.Habil.css"
+import "./style.css"
 import MyVideoComponent from "./video/video";
 import myImage from "./video/new edited white.png"
 

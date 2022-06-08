@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.spence.css"
+import "./style.css"
 import {Card, Button} from 'react-bootstrap'
 
 const Events = (props) => {
