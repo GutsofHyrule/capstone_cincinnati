@@ -16,7 +16,13 @@
     align-items: center;
     justify-content: center;
 
+
 } 
+
+.form {
+    box-shadow: 1px 5px 10px 10px rgba(0, 0, 0, 0.5);
+   
+}
 
 
 form{
@@ -34,9 +40,9 @@ input, textarea{
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 5px solid black;
+    border: 3px solid black !important;
     color: black;
-    background: white;
+    background: white !important;
     font-size: 15px;
 }
 
@@ -62,6 +68,10 @@ button{
     cursor: pointer;
 }
 
+.button {
+    font-size: 15px;
+}
+
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -78,7 +88,6 @@ textarea:valid~label{
 .row input-group{
     flex-basis: 48%;
 }
-
 textarea{
     height: 200px;
 }
