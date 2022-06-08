@@ -6,11 +6,7 @@ import About from './components/About'
 import Places from './components/Places'
 import Events from './components/Events'
 import Home from './components/Home'
-<<<<<<< HEAD
 // import Contact from './components/Contact'
-=======
-import Contact from './components/Contact'
->>>>>>> 1910c36ec768f4aad85755a07b9d63c19aeafe5b
 class App extends Component{
   render(){
     return(
