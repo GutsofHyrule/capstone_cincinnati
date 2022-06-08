@@ -6,7 +6,7 @@ import About from './components/About'
 import Places from './components/Places'
 import Events from './components/Events'
 import Home from './components/Home'
-import Contact from './components/Contact'
+// import Contact from './components/Contact'
 class App extends Component{
   render(){
     return(
@@ -18,7 +18,7 @@ class App extends Component{
             <Route path='/about' component={About} />
             <Route path='/places' component = {Places} />
             <Route path='/events' component={Events} />
-            <Route path='/contact' component={Contact} />
+            {/* <Route path='/contact' component={Contact} /> */}
           </Switch>
         </div>
       </BrowserRouter>
