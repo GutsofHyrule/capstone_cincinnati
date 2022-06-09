@@ -1,6 +1,6 @@
 import React from "react";
 import MyVideo from "./cincyv.mp4";
-import "../Habil.css"
+import "../style.css"
 
 class MyVideoComponent extends React.Component {
   render() {
