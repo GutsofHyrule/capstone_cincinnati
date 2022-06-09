@@ -4,6 +4,7 @@ import MyVideoComponent from "./video/video";
 import myImage from "./video/new edited white.png"
 import {Helmet} from "react-helmet";
 
+
 const Home = () => {
     return(
         
