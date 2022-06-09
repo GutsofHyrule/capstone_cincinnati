@@ -44,7 +44,7 @@ const Footer = () => {
             <hr />
             <div className=''>
                 <p className='col-sm'>
-                    &copy;{new Date().getFullYear()} Capstone 2022 | All rights reserved | Terms of Service | Privacy
+                    &copy;{new Date().getFullYear()} Capstone | All rights reserved | Terms of Service | Privacy
                 </p>
             </div>
 
