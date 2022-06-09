@@ -1,33 +1,24 @@
-import React from "react";
+import React, {Component} from "react";
 import "./style.css"
 import {Card, Button} from 'react-bootstrap'
 
 
 
-const Events = (props) =>{
+const Event = (props) =>{
     return(
-    <div className="container">
-        <h4 className="center">Events</h4>
-        <h5>Come join the party.</h5>
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={props.events.imageURL} />
-  <Card.Body>
-    <Card.Title>{props.events.name}</Card.Title>
-    <Card.Text>
-     {props.events.description}
-     {props.events.price}
-    </Card.Text>
-    <Button className='center' variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-    </div>
+<div className="card center" style={{width: "18rem"}}>
+  <img className="card-img-top" src={props.event.imageURL} alt="Card cap"/>
+  <div className="card-body">
+    <h5 className="card-title">{props.event.name}</h5>
+    <p className="card-text">{props.event.description}</p>
+  </div>
+</div>
     )
  }
 
 export default class EventsList extends Component{
 constructor(props){
     super(props)
-    // this.deleteEvent = this.deleteEvent.bind(this)
    
     this.state = {
         events: []
@@ -45,17 +36,10 @@ componentDidMount() {
     })
 }
 
-// deleteEvent(id){
-//     axios.delete(BACKEND_URL + 'event/' +id)
-//     .then(res => console.log(res.data))
 
-//     this.setState({
-//         event: this.state.event.filter(el => el._id !== id)
-//     })
-// }
 EventsList(){
     return this.state.events.map(currentevent => {
-        return <Events event={currentevent}  key={currentevent._id}/>
+        return <Event event={currentevent}  key={currentevent._id}/>
     })
 }
 
@@ -64,7 +48,9 @@ render() {
     <div className="container"> 
         <h4 className="center">Events</h4>
         <h5 className="center">Come join the party.</h5>
+        <div className="d-flex flex-wrap">
         {this.EventsList()}
+        </div>
     </div>
     )
 }

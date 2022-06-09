@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css"
+import image from "./img/museum.jpg"
 
 const About = () => {
     return (
 
-        
         <div className="container-fluid">
+        <img className="museum"  src={image} alt="cincinnati museum"></img>
         <div className="parent">
         <div className="div1 container">
                  <p className="center">About Cincinnati</p>
