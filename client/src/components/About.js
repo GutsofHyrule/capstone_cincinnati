@@ -1,11 +1,13 @@
 import React from "react";
-import "./style.spence.css"
+import "./style.spence.css";
+import image from "./img/museum.jpg"
 
 const About = () => {
     return (
 
         
         <div className="container-fluid">
+            <img className="museum"  src={image} alt="cincinnati meuseum"></img>
         <div class="parent">
         <div class="div1 container">
                  <p className="center">About Cincinnanti</p>

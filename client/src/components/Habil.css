@@ -1,0 +1,58 @@
+html{
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+video {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh;
+}
+
+h2 { font-size: 3rem; }
+
+
+
+
+img{
+width: 103vw;
+height:30vh;
+margin-top: -33vh;
+/* position: fixed; */
+margin-left: -15px;
+/* display:none ; */
+
+}
+.logo{
+position: fixed;
+color: rgb(0, 0, 0);
+z-index: 5;
+margin-top: -78vh;
+font-size: large;
+box-shadow: 10px 20px 10px black;
+margin-left: 1vw;
+}
+
+.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+
+.footer{
+  height: 60vh;
+  background-color: rgb(30, 30, 31);
+  color: aliceblue;
+}

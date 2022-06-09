@@ -8,12 +8,14 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-    
+    .museum{
+        height: 80vh !important;
+    }
     .div1 { grid-area: 1 / 1 / 3 / 9; 
-            background-image:url(./img/museum.jpg);
+            /* background-image:url(./img/museum.jpg); */
             background-size: cover;
             height: 40vh;
-            width: 100%;
+            width: 100vw !important;
             background-position-y: -30px;
 }
     .div2 { grid-area: 1 / 3 / 4 / 7;
