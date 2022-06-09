@@ -3,10 +3,11 @@ import "./style.css"
 
 const Footer = () => {
     return(
-        <div className="main footer">
+        <div className="main-footer">
             <div className= "foot">
                 <div className= "footer-row">
                 {/*column 1*/}
+                <div className="container text-right">
                 <div className='col'>
                 <h4>Karim</h4>
                 {/*insert portfolio, linkedIn, github*/}
@@ -38,13 +39,14 @@ const Footer = () => {
                     <li></li>
                 </ul>
 
+                </div>
             </div>
 
             </div>
             <hr />
             <div className=''>
                 <p className='col-sm'>
-                    &copy;{new Date().getFullYear()} Capstone 2022 | All rights reserved | Terms of Service | Privacy
+                    &copy;{new Date().getFullYear()} Capstone
                 </p>
             </div>
 
