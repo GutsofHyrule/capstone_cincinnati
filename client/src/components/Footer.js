@@ -1,54 +1,15 @@
 import React from 'react';
 import "./style.css"
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const Footer = () => {
     return(
         <div className="main-footer">
-            <div className= "foot">
+            <div className= "foot  d-inline-flex flex-row text-right">
                 <div className= "footer-row">
-                {/*column 1*/}
-                <div className="container text-right">
-                <div className='col'>
-                <h4>Karim</h4>
-                {/*insert portfolio, linkedIn, github*/}
-                <ul className='port'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    <p>Spencer <a href='https://github.com/GutsofHyrule'><i class="fa-brands fa-github"></i></a> Habil Karim</p>
                 </div>
-                {/*column 2*/}
-                <div className='col'>
-                <h4>Spencer</h4>
-                 {/*insert portfolio, linkedIn, github*/}
-                 <ul className='port'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                </div>
-
-                {/*column 3*/}
-                <div className='col'>
-                <h4>Habil</h4>
-                 {/*insert portfolio, linkedIn, github*/}
-                 <ul className='port'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                </div>
-            </div>
-
-            </div>
-            <hr />
-            <div className=''>
-                <p className='col-sm'>
-                    &copy;{new Date().getFullYear()} Capstone
-                </p>
-            </div>
 
         </div>
                 
