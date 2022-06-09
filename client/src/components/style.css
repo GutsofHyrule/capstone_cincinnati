@@ -94,7 +94,10 @@ html{
     max-width: 600px;
   }
   
-  
+  .input{
+    background-color: aliceblue;
+    border: solid 2px;
+  }
   .input-group{
     margin-bottom: 30px;
     position: relative;
@@ -104,9 +107,9 @@ html{
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 5px solid black;
+    border: 2px solid black  !important;
     color: black;
-    background: white;
+    background: white !important;
     font-size: 15px;
   }
   
@@ -158,9 +161,10 @@ html{
       color: white;
       background-color: black;
       padding-top: 1em;
-      position: fixed;
+      position: static;
       bottom: 0;
       width: 100%;
+      margin-top: 20px;
   }
 
   .app-wrap{
@@ -168,6 +172,7 @@ html{
       flex-direction: column;
       min-height: 100vh;
   }
+
   /*Karim end style sheet*/
   
   
@@ -207,7 +212,7 @@ html{
     position: relative;
   }
 
-  /* event */
+  /* event places */
   .card{
     margin-left: 50px;
     margin-right: 50px;

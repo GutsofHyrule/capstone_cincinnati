@@ -8,11 +8,9 @@ const Footer = () => {
         <div className="main-footer">
             <div className= "foot  d-inline-flex flex-row text-right">
                 <div className= "footer-row">
-                    <p>Spencer <a href='https://github.com/GutsofHyrule'><i class="fa-brands fa-github"></i></a> Habil Karim</p>
+                    <p>Spencer <a href='https://github.com/GutsofHyrule'><i className="fab fa-github"></i></a> Habil Karim</p>
                 </div>
-
-        </div>
-                
+        </div>              
     </div>
     )
 }
