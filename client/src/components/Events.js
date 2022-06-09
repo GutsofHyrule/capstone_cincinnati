@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 import React from "react";
 import "./style.css"
-=======
-import React, { Component } from "react";
-import "./style.spence.css"
-import axios from 'axios'
-// import { BACKEND_URL } from "../config";
->>>>>>> 7642f51ea10cfc95353b1545a8f88f7d60ca8347
 import {Card, Button} from 'react-bootstrap'
 
 

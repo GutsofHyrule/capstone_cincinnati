@@ -1,9 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
 import "./style.css"
-=======
-import "./style.Karim.css"
->>>>>>> 7642f51ea10cfc95353b1545a8f88f7d60ca8347
 
 const Contact = () =>{
 
