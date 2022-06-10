@@ -12,7 +12,7 @@ class App extends Component{
   render(){
     return(
       <BrowserRouter>
-        <div className="App-wrap">
+        
         <div className="content-wrap">
 
           <Navbar />
@@ -26,7 +26,7 @@ class App extends Component{
           </Switch>
           </div>
           <Footer/>
-        </div>
+        
       </BrowserRouter>
 
     )
