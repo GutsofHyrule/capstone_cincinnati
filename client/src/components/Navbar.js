@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className='nav-wrapper  sticky-top'>
 
             <div className="container " id='navbar'>
-                <a  href='/' className='logo-holder left'> <img className='cincy-logo' src={Logo} alt=""></img></a>
+           <img className='cincy-logo left' src={Logo} alt=""></img>
                 <ul className='right'>
                     <li className='right1'><Link className="links"to='/'>Home</Link></li>
                     <li className='right1'><Link className="links"to='/about'>About</Link></li>

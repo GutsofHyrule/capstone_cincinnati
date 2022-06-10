@@ -16,6 +16,10 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   
     console.log("MongoDB is connected");
   })
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+  });
   const usersRouter = require('./Routes/users');
   app.use('/user', usersRouter);
 
@@ -23,7 +27,7 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   app.use('/amusements', amuseRouter)
   
   const eventRouter = require('./Routes/events')
-  app.use('events', eventRouter)
+  app.use('/events', eventRouter)
 
   const commentRouter = require('./Routes/comment')
   app.use('/comment', commentRouter)
