@@ -93,12 +93,12 @@ html{
     /* object-fit: cover; */
     /* border-radius: 10px 20px 10px 20px; */
     margin-top: -15vh;
-    margin-left: 0;
-
+    margin-left: -15px;
+    transition: all 2s ease !important;
   }
   .welcome-text{
     /* z-index: 55 !important; */
-    color: black !important;
+    color: rgb(2, 5, 48) !important;
     margin-top: -90vh;
     position: absolute;
     margin-left: 5vh;
@@ -114,7 +114,7 @@ html{
     font-size: 8vw;
     
   }
-  h1, h2 {
+  /* h1, h2 {
     color: white;
     font-family: Trebuchet MS;
     font-weight: bold;
@@ -124,7 +124,7 @@ html{
   h1 {
     font-size: 6rem;
     margin-top: 30vh;
-  }
+  } */
   
   h2 { font-size: 3rem; }
   .ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
@@ -250,11 +250,7 @@ html{
   .main-footer{
       color: white;
       background-color: black;
-<<<<<<< HEAD
-      padding-top: 3em;
-=======
       padding-top: 1em;
->>>>>>> 480992c068c994babaab2cafe0e91424a14dc398
       position: static;
       bottom: 0;
       width: 100%;
