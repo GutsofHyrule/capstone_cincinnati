@@ -217,4 +217,25 @@ html{
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  .votebtn{
+    padding: 10px 15px;
+    color: aliceblue;
+    border: solid black 2px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.votebtn:focus{
+    outline: none;
+}
+
+#upvote{
+    background-color: green;
+}
+#downvote{
+    background-color: red;
+}
   /*Spence end style sheet*/

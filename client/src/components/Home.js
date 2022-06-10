@@ -11,7 +11,7 @@ const Home = () => {
 
     
 <MyVideoComponent/>
-    <div className="container-fluid"><img className='homeImg'  src={myImage} alt="" srcset=""/></div>
+    <div className="container-fluid"><img className='homeImg'  src={myImage} alt=""/></div>
         
     <div id="3fb7eb4b8c29bbe54ec5c070c0983fd1" className="ww-informers-box-854753"><p className="ww-informers-box-854754"><a href="https://world-weather.info/forecast/usa/cincinnati/14days/">world-weather.info/forecast/usa/cincinnati/14days/</a><br /><a href="https://world-weather.info/">world-weather.info</a></p></div>
 <Helmet>

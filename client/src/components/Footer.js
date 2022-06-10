@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style.css"
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 
 const Footer = () => {
     return(
