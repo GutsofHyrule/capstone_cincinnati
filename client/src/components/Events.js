@@ -9,14 +9,14 @@ const Event = (props) =>{
     const DOWNVOTE = useRef("downvote")
     var VOTES = useRef('votes')
 
- const upvote=() =>{
+ const upvote=(props) =>{
     counter++;
     
    VOTES.dangerouslySetInnerHTML = counter;
    console.log(counter)
 
 }
- const downvote= () =>{
+ const downvote= (props) =>{
     counter--;
     
     VOTES.dangerouslySetInnerHTML = counter;
@@ -29,8 +29,8 @@ const Event = (props) =>{
     <h5 className="card-title">{props.event.name}</h5>
     <p className="card-text">{props.event.description}</p>
     <p id='votes'>{counter}</p>
-    <button className="votebtn" id={UPVOTE} onClick={upvote()}>Up vote</button>
-    <button className="votebtn" id={DOWNVOTE} onClick={downvote()}>Down vote</button>
+    <button className="votebtn" id={UPVOTE} onClick={upvote}>Up vote</button>
+    <button className="votebtn" id={DOWNVOTE} onClick={downvote}>Down vote</button>
   </div>
 </div>
     )
