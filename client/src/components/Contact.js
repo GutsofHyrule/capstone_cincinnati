@@ -7,7 +7,7 @@ const Contact = () =>{
 <div className= 'container-fluid p-0'>
 <div class="hero">
     <form class="form"> 
-      <div class="row">
+      <div class="row-1">
         <div class="input-group">
           <input type="text" id= "name" required/>
           <label for=""><i class="fa-solid fa-user"></i>Your Name</label>
