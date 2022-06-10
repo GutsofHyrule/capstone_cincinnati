@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "./style.css"
 import axios from 'axios'
+import {default as App} from './Counter'
 // import {Card, Button} from 'react-bootstrap'
 
 const Places = (props) => {
@@ -11,6 +12,7 @@ const Places = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{props.amuse.name}</h5>
                     <p className="card-text">{props.amuse.description}</p>
+                    <App />
                 </div>
             </div>
         

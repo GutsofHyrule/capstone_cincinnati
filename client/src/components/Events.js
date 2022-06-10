@@ -1,36 +1,35 @@
-import React, {Component, useRef } from "react";
+import React, {Component,  } from "react";
 import "./style.css"
+import {default as App}  from './Counter'
 import axios from 'axios'
 
 
 const Event = (props) =>{
-    var counter = 0
-    const UPVOTE = useRef("upvote")
-    const DOWNVOTE = useRef("downvote")
-    var VOTES = useRef('votes')
+//     var counter = 0
+//     const UPVOTE = useRef("upvote")
+//     const DOWNVOTE = useRef("downvote")
+//     var VOTES = useRef('votes')
 
- const upvote=(props) =>{
-    counter++;
+//  const upvote=(props) =>{
+//     counter++;
     
-   VOTES.dangerouslySetInnerHTML = counter;
-   console.log(counter)
-
-}
- const downvote= (props) =>{
-    counter--;
+//    VOTES.dangerouslySetInnerHTML = {counter};
+//    console.log(counter)
     
-    VOTES.dangerouslySetInnerHTML = counter;
-    console.log(counter)
- }
+// }
+//  const downvote= (props) =>{
+//     counter--;
+    
+//     VOTES.dangerouslySetInnerHTML = {counter};
+//     console.log(counter)
+//  }
     return(
 <div className="card center" style={{width: "18rem"}}>
   <img className="card-img-top" src={props.event.imageURL} alt="Card cap"/>
   <div className="card-body">
     <h5 className="card-title">{props.event.name}</h5>
     <p className="card-text">{props.event.description}</p>
-    <p id='votes'>{counter}</p>
-    <button className="votebtn" id={UPVOTE} onClick={upvote}>Up vote</button>
-    <button className="votebtn" id={DOWNVOTE} onClick={downvote}>Down vote</button>
+        <App/>
   </div>
 </div>
     )
