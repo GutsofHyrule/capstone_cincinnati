@@ -1,7 +1,10 @@
 import React, {Component, useRef } from "react";
 import "./style.css"
 import axios from 'axios'
+<<<<<<< HEAD
+=======
 
+>>>>>>> 480992c068c994babaab2cafe0e91424a14dc398
 
 
 const Event = (props) =>{

@@ -1,19 +1,118 @@
 /*Habil stylesheet*/
 /*Home page*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 html{
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
   }
+
+  .right{
+    text-decoration: none !important;
+    justify-content: center;
+  }
+  .right1{
+    text-align: center !important;
+    justify-content: center;  
+    align-items: center;
+
+  }
+  .links{
+    text-decoration: none !important;
+    width: 10vw;
+    color: whitesmoke;
+    transition: .5s ease-in;
+    /* margin-right: 2rem;  */
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.5vw;
+    margin-top:1vh;
+    font-weight: 500;
+    height: 10vh;
+    border-left: 0.1px solid rgba(49, 49, 49, 0.1);
+  }
+
+  .links:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    height: 10vh;
+
+
+  }
+  .right1:hover{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none !important;
+    color: aliceblue !important;
+    transition: ease 0.5s ;
+  }
+  #navbar{
+
+  }
+  .nav-wrapper{
+    /* opacity: 0.99; */
+    height: 11vh;
+    position: sticky !important;
+    background-image: linear-gradient(90deg,rgb(254, 254, 255) 8%,rgb(47, 46, 48), rgb(6, 1, 29));
+    background-color: rgb(6, 1, 29);
+    box-shadow: 5px 3px 10px rgb(0, 0, 0);
+
+  }
+  .cincy-logo{
+    /* margin-top: 30vh !important; */
+
+    position: relative;
+    margin-left:-5rem ;
+    width: 19rem !important;
+    height: 10vh !important;
+    /* margin-top: -1.8rem !important; */
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    position: sticky;
+    /* margin-left: 0.7rem !important; */
+    /* padding: 1%; */
+
+
+    /* box-shadow: 10px 10px 20px whitesmoke; */
+  }
   video {
-    width: 100vw;
+
     height: 80vh;
     object-fit: cover;
-    /* position: fixed; */
+
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  .welcome{
+    height: 100vh !important;
+    width: 100vw;
+    /* object-fit: cover; */
+    /* border-radius: 10px 20px 10px 20px; */
+    margin-top: -15vh;
+    margin-left: 0;
+
+  }
+  .welcome-text{
+    /* z-index: 55 !important; */
+    color: black !important;
+    margin-top: -90vh;
+    position: absolute;
+    margin-left: 5vh;
+    font-size: 10vw;
+    font-family: 'Righteous', cursive;
+  }
+  .to-text{
+    z-index: 55 !important;
+    color: black !important;
+    margin-top: -69vh;
+    position: absolute;
+    margin-left: 35vh;
+    font-size: 8vw;
+    
   }
   h1, h2 {
     color: white;
@@ -37,24 +136,15 @@ html{
       background-size: cover;
     }
   } */
-  .curve{
-    background-color: rgb(241, 224, 199);
-    width: 30vw;
-    height: 20vh;
-    /* z-index: 2; */
-    position: absolute;
-    border-radius: 50%;
-    margin-top: 250px;
-    /* margin-left: -30px; */
-  }
+
   
  
   .homeImg{
-  width: 103vw;
+  width: 100vw;
   height:50vh;
-  margin-top: -43vh;
+  margin-top: -25vh;
   /* position: fixed; */
-  margin-left: -15px;
+ margin-left: -2vw;
   }
 
   /*Habil end style sheet*/
@@ -160,7 +250,11 @@ html{
   .main-footer{
       color: white;
       background-color: black;
+<<<<<<< HEAD
+      padding-top: 3em;
+=======
       padding-top: 1em;
+>>>>>>> 480992c068c994babaab2cafe0e91424a14dc398
       position: static;
       bottom: 0;
       width: 100%;
@@ -201,10 +295,11 @@ html{
     margin-top:200px;
   }
   .museum{
-    height: 50vh;
+    /* height: 50vh; */
+    width: 100vw !important;
     margin-top: 1px;
     /* display: none; */
-    position:relative;
+    /* position:relative; */
   }
 
   .nav-wrapper{
