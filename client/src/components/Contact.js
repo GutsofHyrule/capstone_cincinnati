@@ -5,10 +5,10 @@ const Contact = () =>{
 
   return(
 <div className= 'container-fluid p-0'>
-<div class="hero">
-    <form class="form"> 
+<div className="hero">
+    <form className="form"> 
       <div class="row-1">
-        <div class="input-group">
+        <div className="input-group">
           <input type="text" id= "name" required/>
           <label for=""><i className="fa-solid fa-user"></i>Your Name</label>
           </div>
@@ -29,7 +29,7 @@ const Contact = () =>{
             <label for=""><i className="fa-solid fa-message"></i>Your Message</label>
             </div>
 
-        <button type="submit" className="button">Submit</button>
+        <button type="submit" className="button contactbutton">Submit</button>
     </form>
   </div>
   </div>

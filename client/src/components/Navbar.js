@@ -6,17 +6,22 @@ import "./style.css"
 
 const Navbar = () => {
     return (
-        <nav className='nav-wrapper '>
-
-            <div className="container " id='navbar'>
+        <nav className='nav-wrapper navbar navbar-expand-lg '>
+            <div className="container-fluid " id='navbar'>
            <img className='cincy-logo left' src={Logo} alt=""></img>
-                <ul className='right'>
-                    <li className='right1'><Link className="links"to='/'>Home</Link></li>
-                    <li className='right1'><Link className="links"to='/about'>About</Link></li>
-                    <li className='right1'><Link className="links"to='/contact'>Contact</Link></li>
-                    <li className='right1'><Link className="links"to='/amusements'>Places</Link></li>
-                    <li className='right1'><NavLink className="links"to='/events'>Events</NavLink></li>
+           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className='navbar-nav'>
+                    <li className='right1 nav-item'><Link className="links nav-link"to='/'>Home</Link></li>
+                    <li className='right1 nav-item'><Link className="links nav-link"to='/about'>About</Link></li>
+                    <li className='right1 nav-item'><Link className="links nav-link"to='/contact'>Contact</Link></li>
+                    <li className='right1 nav-item'><Link className="links nav-link"to='/FAQs'>FAQs</Link></li>
+                    <li className='right1 nav-item'><NavLink className="links nav-link"to='/amusements'>Places</NavLink></li>
+                    <li className='right1 nav-item'><NavLink className="links nav-link"to='/events'>Events</NavLink></li>
                 </ul>
+                </div>
             </div>
         </nav>
     )

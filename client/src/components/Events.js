@@ -69,8 +69,10 @@ render() {
  
     return(
     <div className="container"> 
+        <div className="mt-4">
         <h4 className="center">Events</h4>
         <h5 className="center">Come join the party.</h5>
+        </div>
         <div className="d-flex flex-wrap">
         {this.EventsList()}
         </div>

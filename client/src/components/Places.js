@@ -48,8 +48,10 @@ export default class AmusesList extends Component {
     render() {
         return (
             <div className="container">
+            <div className='mt-4'>
                 <h4 className="center">Places to Go</h4>
                 <h5 className="center">Come join the party.</h5>
+            </div>
                 <div className="d-flex flex-wrap">
                     {this.AmusesList()}
                 </div>
