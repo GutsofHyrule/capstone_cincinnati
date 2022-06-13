@@ -57,6 +57,7 @@ componentDidMount() {
 }
 
 
+
 EventsList(){
     return this.state.events.map(currentevent => {
         return <Event event={currentevent}  key={currentevent._id}/>

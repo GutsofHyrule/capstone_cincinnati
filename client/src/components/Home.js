@@ -42,7 +42,7 @@ const Home = () => {
       >
         Cincinnati
       </h1>
-      <h1 />
+      
     </header>
     <div className="top-box  top-box-a">
       <h3>
