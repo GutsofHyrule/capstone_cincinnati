@@ -5,10 +5,10 @@ const Contact = () =>{
 
   return(
 <div className= 'container-fluid p-0'>
-<div className="hero">
-    <form className="form"> 
-      <div className="row">
-        <div className="input-group">
+<div class="hero">
+    <form class="form"> 
+      <div class="row-1">
+        <div class="input-group">
           <input type="text" id= "name" required/>
           <label for=""><i className="fa-solid fa-user"></i>Your Name</label>
           </div>

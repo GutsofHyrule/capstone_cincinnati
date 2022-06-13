@@ -45,9 +45,7 @@ html{
     color: aliceblue !important;
     transition: ease 0.5s ;
   }
-  #navbar{
 
-  }
   .nav-wrapper{
     /* opacity: 0.99; */
     height: 11vh;
@@ -238,33 +236,70 @@ html{
     top: -35px;
     font-size: 14px;
   }
-  .row{
+  .row-1{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .row input-group{
+  .row-1 input-group{
     flex-basis: 48%;
     
   }
+
+  .hello {
+    color: black;
+  }
+
   /*Footer*/
   .main-footer{
-      color: white;
-      background-color: black;
-      padding-top: 1em;
-      position: static;
-      bottom: 0;
-      width: 100%;
-      margin-top: 20px;
-  }
+    color: white;
+    background-color: black;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
 
-  .app-wrap{
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-  }
+.foots{
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
 
+}
+
+.footer-row{
+display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.group{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.group1{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.links{
+  font-family: sans-serif;
+}
+  
   /*Karim end style sheet*/
   
   
