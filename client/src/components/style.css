@@ -1,5 +1,293 @@
 /*Habil stylesheet*/
 /*Home page*/
+
+
+/* for the grid  */
+.wrapper{
+  padding: 25px;
+  display: grid;
+  grid-gap: 10px;
+  background-color: whitesmoke;
+}
+.top-container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'showcase showcase top-box-a'
+  'showcase showcase top-box-b';
+
+}
+
+.showcase{
+  grid-area: showcase;
+  min-height: 400px;
+
+  background-image: url(./img/showcase2.jpg);
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  padding-top : 10rem;
+
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  align-items: start;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow:inset 5px 5px 500px   black !important;
+  background-position: center;
+  width: 100%;
+}
+
+.top-box{
+  background: whitesmoke;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 5px 5px 5px black;
+  padding: 3rem;
+
+}
+.top-box-a{
+  grid-area: top-box-a;
+  background: url(./img/about.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px 5px 5px 5px;
+  transition:linear 0.3s;
+  width: 100%;}
+.top-box-a:hover{
+opacity: 1;
+cursor: pointer;
+
+background-color: rgb(255, 255, 255);
+transform: scale(1.05);
+z-index: 2;
+display: flex;
+align-content: center; 
+justify-content: center;
+box-shadow: inset 5px 5px 500px  black !important;
+}
+.top-box-a:hover h3 span::after{
+  content: "About";
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-left:-4rem ;
+  margin-top: -1.5rem;
+  display: block;
+  padding: -2;
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+}
+.top-box-b:hover{
+opacity: 1;
+cursor: pointer;
+
+background-color: rgb(255, 255, 255);
+transform: scale(1.05);
+z-index: 2;
+display: flex;
+align-content: center; 
+justify-content: center;
+box-shadow: inset 5px 5px 500px  black !important;
+}
+.top-box-b:hover h3 span::after{
+  content: "FAQ";
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-left:-3rem ;
+  margin-top: -1rem;
+  display: block;
+  padding: -2;
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.top-box-b{
+  grid-area: top-box-b;
+  background: url(./img/BC-FAQ.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  border-radius: 5px 5px 5px 5px;
+
+  transition:linear 0.3s;
+}
+
+
+
+/* Boxes */
+.boxes {
+  display: grid !important;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: 200px;
+
+}
+.box{
+  background-color: gray;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.box1{
+  background: url(./img/places.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  transition:linear 0.3s;
+border-radius: 5px 5px 5px 5px;
+}
+.box2{
+  background: url(./img/events.png);
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.9; */
+  transition:linear 0.3s;
+border-radius: 5px 5px 5px 5px;
+}
+.box3{
+  background: url(./img/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  transition:linear 0.3s;
+border-radius: 5px 5px 5px 5px;
+}
+.box4{
+  background: url(./img/hotel\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+  transition:linear 0.3s;
+  border-radius: 5px 5px 5px 5px;
+}
+.box4:hover{
+opacity: 1;
+transform:rotate3d(20deg,30deg,50deg,30deg,60deg,90deg);
+background-color: rgb(255, 255, 255);
+transform: scale3d(1.05,1.05,1.05);
+z-index: 2;
+display: flex;
+align-content: center; 
+justify-content: center;
+box-shadow:inset 5px 5px 500px   black !important;
+/* box-shadow: 5px 5px 5px   black !important; */
+}
+
+.box4:hover h3::after{
+  content: "Flight and Hotel Booking";
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 2vw;
+}
+
+.box3:hover{
+  opacity: 1;
+  transform:rotate3d(20deg,30deg,50deg,30deg,60deg,90deg);
+  background-color: rgb(255, 255, 255);
+  transform: scale3d(1.05,1.05,1.05);
+z-index: 2;
+display: flex;
+align-content: center;
+justify-content: center;
+box-shadow:inset 5px 5px 500px   black !important;
+box-shadow: 5px 5px 5x   black !important;
+}
+
+.box3:hover h3::after{
+  content: "Contact";
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 3vw;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.box2:hover{
+  opacity: 1;
+  transform:rotate3d(2,3,30,5,6,4);
+  background-color: rgb(0, 0, 0);
+  transform: scale3d(1.05,1.05,1.05);
+z-index: 2;
+text-align: center;
+display: flex;
+align-content: center;
+justify-content: center;
+box-shadow:inset 5px 5px 500px   black !important;
+}
+
+.box2:hover h3::after{
+  content: "Events";
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 3vw;
+}
+
+.box1:hover{
+  opacity: 1;
+  transform:rotate3d(2,3,30,5,6,4);
+  background-color: rgb(255, 249, 249);
+  transform: scale3d(1.05,1.05,1.05);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  box-shadow:inset 5px 5px 500px   black !important;
+}
+
+.box1:hover h3::after{
+  content: "Places";
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 3vw;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+    'showcase showcase'
+    'top-box-a top-box-b';
+  }
+
+  .showcase h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 500px){
+  .top-container{
+    grid-template-areas:
+    'showcase'
+    'top-box-a'
+    'top-box-b';
+  }
+}
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 html{
     background-color: rgb(255, 255, 255);
@@ -49,7 +337,7 @@ html{
   .nav-wrapper{
     /* opacity: 0.99; */
     height: 11vh;
-    position: sticky !important;
+    /* position: sticky !important; */
     background-image: linear-gradient(90deg,rgb(254, 254, 255) 8%,rgb(47, 46, 48), rgb(6, 1, 29));
     background-color: rgb(6, 1, 29);
     box-shadow: 5px 3px 10px rgb(0, 0, 0);
@@ -101,6 +389,8 @@ html{
     position: absolute;
     margin-left: 5vh;
     font-size: 10vw;
+    width: 80vw;
+
     font-family: 'Righteous', cursive;
   }
   .to-text{
@@ -289,13 +579,41 @@ display: flex;
     font-family: sans-serif;
 }
 
+
 .group1{
   text-align: center;
   font-family: sans-serif;
 }
 
-.links{
+.link{
+  text-decoration: none !important;
+    width: 8vw;
+    color: whitesmoke;
+    transition: .5s ease-in;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.5vw;
+    margin-top:1vh;
+    font-weight: 500;
+    height: 10vh;
+    border-left: 0.1px solid rgba(49, 49, 49, 0.1);
   font-family: sans-serif;
+  border-radius: 10px;
+  
+}
+
+.link:hover{
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+    transform: scale(1.5);
+    height: 8vh;
+  
+  
 }
   
   /*Karim end style sheet*/

@@ -6,7 +6,7 @@ import "./style.css"
 
 const Navbar = () => {
     return (
-        <nav className='nav-wrapper  sticky-top'>
+        <nav className='nav-wrapper '>
 
             <div className="container " id='navbar'>
            <img className='cincy-logo left' src={Logo} alt=""></img>
