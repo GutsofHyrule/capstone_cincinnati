@@ -125,9 +125,9 @@
 
 
 /* eventPage Cards */
-.voting-counter{
+/* .voting-counter{ */
   /* margin-left: 20rem; */
-}
+/* } */
 .eventBody{
   display: flex;
   justify-content: center;
@@ -693,9 +693,10 @@ html{
   
   .contact-forms {
     padding: 30px 40px;
-    background-color: #ffffff;
+    background-color: #ffffffee;
     border-radius: 12px;
-    max-width: 400px;
+    
+    width: 80vw;
   }
   
   .contact-forms textarea {
@@ -796,10 +797,13 @@ html{
     padding: 10px 60px;
     font-weight: 500;
     letter-spacing: 2px;
+    transition: ease-out 0.3s;
   }
   
   .contact-forms .submit-button-wrappers input:hover {
-    background-color: black;
+    background-color: rgb(202, 202, 202);
+    color: black;
+    transform: scale(1.2);
   }
   
 
@@ -814,6 +818,9 @@ html{
     bottom: 0;
     width: 100%;
     /* margin-top: 20px; */
+}
+.copyright{
+  bottom: 0;
 }
 
 .foots{
@@ -932,6 +939,7 @@ display: flex;
     user-select: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 50%;
 }
 
 .votebtn:focus{

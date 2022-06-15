@@ -28,16 +28,18 @@ const Event = (props) =>{
 
 
         
-<div className="eventCardWrapper col-md-6" >
-    <div className="eventCard ">
+<div className="blog-post__container" >
+<div className="blog-post filterDiv" >
+    <div className="blog-post__img ">
   <img  src={props.event.imageURL} alt="Card cap"/>
-  <div className="eventCardInfo">
-    <h1 >{props.event.name}</h1>
-    <p >{props.event.description}</p>
+  </div>
+  <div className="blog-post__info">
+    <h5 className="blog-post__title">{props.event.name}</h5>
+    <p className="blog-post__text">{props.event.description}</p>
 
   </div>
-  </div>
-  <App id="voting-counter"/>   
+  <App /> 
+  </div>  
 </div>
 
 
