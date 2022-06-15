@@ -4,9 +4,14 @@ import MyVideoComponent from "./video/video";
 import myImage from "./video/new edited white.png"
 import {Helmet} from "react-helmet";
 import welcome from "./video/home-page-banner.png"
+import { Link, NavLink, withRouter } from 'react-router-dom'
+
+
 
 
 const Home = () => {
+  
+
     return(
         
 <div>
@@ -44,56 +49,79 @@ const Home = () => {
       </h1>
       <h1 />
     </header>
+
     <div className="top-box  top-box-a">
+        <Link to="/about">
       <h3>
         {" "}
         <span style={{ width: "100vw" }} />
       </h3>
+        </Link>
     </div>
-    <div className="top-box  top-box-b">
+
+    <div  className="top-box  top-box-b">
+    <Link to="/FAQs">
       <h3>
         {" "}
         <span style={{ width: "100%" }} />{" "}
       </h3>
+      </Link>
     </div>
   </section>
   {/* boxes */}
   <section className="boxes">
-    <div className="box box1">
+
+    <div  className="box box1">
+    <Link to="/amusements">
       <h3>
         <span />
       </h3>
+      </Link>
     </div>
+
     <div className="box box2">
+    <Link to="/events">
+
       <h3>
         <span />
       </h3>
+      </Link>
     </div>
-    <div className="box box3">
+
+    <div  className="box box3">
+    <Link to="/contact">
       <h3>
         <span />
       </h3>
+      </Link>
     </div>
-    <div className="box box4">
+
+    <div onClick={(e) => {e.preventDefault(); window.location.replace('/#flight');}} className="box box4">
+    <a> 
+
       <h3>
         <span />{" "}
       </h3>
+      </a>
     </div>
   </section>
 </div>
 
 <div
   className="container-fluid d-flex  justify-content-center row  "
+  id="flight"
   style={{ marginLeft: "0.5vw" }}
 >
   <div
+  
     className="col-md-6 col-sm-12 p-2 "
     id="searchWidget"
     style={{ width: "100%", height: "100vh" }}
   >
     <iframe
+    
       style={{ borderRadius: "20px 20px 20px 20px" }}
-      id="widgetIframe"
+      id="widgetIframe flight"
       src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=4&tp1=hkjhjkh&tp2=jh ljkhlh&lob=F&des=cincinnati&wbi=13&olc=000066&whf=4&hfc=FFFFFF&wif=4&ifc=&wbc=FFCB00&wbf=4&bfc=3D3100&wws=2&sfs=H100RW100R&langid=1033"
       width="100%"
       height="100%"
@@ -132,10 +160,7 @@ const Home = () => {
         
     <div id="3fb7eb4b8c29bbe54ec5c070c0983fd1" className="ww-informers-box-854753"><p className="ww-informers-box-854754"><a href="https://world-weather.info/forecast/usa/cincinnati/14days/">world-weather.info/forecast/usa/cincinnati/14days/</a><br /><a href="https://world-weather.info/">world-weather.info</a></p></div>
 
-    <div class="elfsight-app-534898b9-490f-45b7-a0e6-7ec7d2ffca55"></div>
-    <Helmet>  
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    </Helmet>
+    
 <Helmet>
 <script async type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=3fb7eb4b8c29bbe54ec5c070c0983fd1"></script>
 
