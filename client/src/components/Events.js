@@ -8,6 +8,8 @@ import img3 from './img/events page/events3'
 import img4 from './img/events page/events4.jpg'
 import img5 from './img/events page/events5.jpg'
 import img6 from './img/events page/events6.png'
+import { BACKEND_URL } from '../config'
+
 
 const Event = (props) =>{
 //     var counter = 0
@@ -32,16 +34,18 @@ const Event = (props) =>{
 
 
         
-<div className="eventCardWrapper col-md-6" >
-    <div className="eventCard ">
+<div className="blog-post__container" >
+<div className="blog-post filterDiv" >
+    <div className="blog-post__img ">
   <img  src={props.event.imageURL} alt="Card cap"/>
-  <div className="eventCardInfo">
-    <h1 >{props.event.name}</h1>
-    <p >{props.event.description}</p>
+  </div>
+  <div className="blog-post__info">
+    <h5 className="blog-post__title">{props.event.name}</h5>
+    <p className="blog-post__text">{props.event.description}</p>
 
   </div>
-  </div>
-  <App id="voting-counter"/>   
+  <App /> 
+  </div>  
 </div>
 
 
@@ -60,7 +64,7 @@ constructor(props){
 
 
 componentDidMount() {
-    axios.get("http://localhost:5000/events/")
+    axios.get( BACKEND_URL + "events/")
     .then(response => {
         this.setState({ events: response.data})
     })
@@ -68,6 +72,7 @@ componentDidMount() {
         console.log(error)
     })
 }
+
 
 
 EventsList(){

@@ -16,6 +16,7 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   
     console.log("MongoDB is connected");
   })
+
   app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     next();
@@ -30,7 +31,14 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   app.use('/events', eventRouter)
 
   const commentRouter = require('./Routes/comment')
-  app.use('/comment', commentRouter)
+  app.use('/comment', commentRouter);
+
+  if (process.env.NODE_ENV === "production"){
+    app.use(express.static('client/build'))
+    app.get('/*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client/build'))
+    })
+  };
   
   app.listen(port, () =>{
   

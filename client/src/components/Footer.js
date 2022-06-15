@@ -27,8 +27,8 @@ const Footer = () => {
             </div>
         </div>
         <hr />
-        <div className='copyright text-center mb-0'>
-            <p className='year'>
+        <div className='copyright'>
+            <p className='year mb-0'>
                 &copy;{new Date().getFullYear()} Capstone 2022 | All rights reserved | Terms of Service | Privacy
             </p>
         </div>              

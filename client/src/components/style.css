@@ -11,6 +11,9 @@
   text-align: center;
   overflow: hidden;
   font-family: Verdana, Geneva, sans-serif;
+  z-index: 0;
+  background-color: rgb(2, 0, 27);
+  margin-left: -1rem;
 }
 
 .event-title {
@@ -19,7 +22,7 @@
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: -1;
-  color: #292929;
+  color: #ffffff;
   font-size: 120px;
   font-weight: 600;
 }
@@ -238,9 +241,9 @@
 
 
 /* eventPage Cards */
-.voting-counter{
+/* .voting-counter{ */
   /* margin-left: 20rem; */
-}
+/* } */
 .eventBody{
   display: flex;
   justify-content: center;
@@ -798,7 +801,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-  } */
+  } 
   
   .contact-form-wrappers {
     padding: 100px 0;
@@ -858,6 +861,41 @@ html{
   
   .contact-forms .description {
     color: black;
+    background: white !important;
+    font-size: 15px;
+  }
+  
+  label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    transition: 0.2s;
+  }
+  
+  
+  .contactbutton{
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: white;
+    border: 5px solid black;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .button {
+    font-size: 15px;
+  }
+  
+  input:focus~label,
+  input:valid~label,
+  textarea:focus~label,
+  textarea:valid~label{
+    top: -35px;
     font-size: 14px;
     text-align: center;
   }
