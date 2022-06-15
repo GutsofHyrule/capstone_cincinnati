@@ -1,30 +1,51 @@
-import React from 'react'
-import { Link, NavLink, withRouter } from 'react-router-dom'
-import Logo from './img/logo.png'
-import "./style.css"
+import { useState } from "react";
+import "./navbar.css";
+import logo from "./img/logo.png";
 
+export default function Navbar() {
 
-const Navbar = () => {
-    return (
-        <nav className='nav-wrapper navbar navbar-expand-lg '>
-            <div className="container-fluid " id='navbar'>
-           <img className='cincy-logo left' src={Logo} alt=""></img>
-           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className='navbar-nav'>
-                    <li className='right1 nav-item'><Link className="links nav-link"to='/'>Home</Link></li>
-                    <li className='right1 nav-item'><Link className="links nav-link"to='/about'>About</Link></li>
-                    <li className='right1 nav-item'><Link className="links nav-link"to='/contact'>Contact</Link></li>
-                    <li className='right1 nav-item'><Link className="links nav-link"to='/FAQs'>FAQs</Link></li>
-                    <li className='right1 nav-item'><NavLink className="links nav-link"to='/amusements'>Places</NavLink></li>
-                    <li className='right1 nav-item'><NavLink className="links nav-link"to='/events'>Events</NavLink></li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    )
+ 
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  return (
+    <nav className="navigation">
+      <a id="drop-shadow" href="/" className="brand-name">
+        <img className="logo" id="drop-shadow" src={logo}></img>
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* icon from Heroicons.com */}
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li >
+            <a  className='navElement'  href="/">Home</a>
+          </li>
+          <li>
+            <a   className='navElement'  href="/about">About</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/contact">Contact</a>
+          </li>
+          <li>
+            <a   className='navElement' href="/amusements">Places</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/events">Events</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
-
-export default withRouter(Navbar)

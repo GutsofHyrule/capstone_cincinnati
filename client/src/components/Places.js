@@ -2,20 +2,30 @@ import React, { Component } from 'react'
 import "./style.css"
 import axios from 'axios'
 import {default as App} from './Counter'
+import banner from "./img/placesBanner.jpeg"
+
 // import {Card, Button} from 'react-bootstrap'
 
 const Places = (props) => {
 
+
     return (
-            <div className="card center" style={{ width: "18rem" }}>
-                <img className="card-img-top" src={props.amuse.imageURL} alt="Card cap" />
-                <div className="card-body">
-                    <h5 className="card-title">{props.amuse.name}</h5>
-                    <p className="card-text">{props.amuse.description}</p>
-                    <App />
+
+        <div className='blog-post__container '>
+
+            <div className="blog-post filterDiv" >
+                <div className="blog-post__img">
+                <img  src={props.amuse.imageURL} alt="Card cap" />
                 </div>
+                <div className="blog-post__info">
+                    <h5 className="blog-post__title">{props.amuse.name}</h5>
+                    <p className="blog-post__text">{props.amuse.description}</p>
+                    
+                </div>
+                <App />
             </div>
-        
+        </div>
+
     )
 }
 export default class AmusesList extends Component {
@@ -48,10 +58,11 @@ export default class AmusesList extends Component {
     render() {
         return (
             <div className="container">
-            <div className='mt-4'>
-                <h4 className="center">Places to Go</h4>
-                <h5 className="center">Come join the party.</h5>
-            </div>
+                <style>
+
+                </style>
+                    <img className='places-banner' src={banner}></img>
+
                 <div className="d-flex flex-wrap">
                     {this.AmusesList()}
                 </div>

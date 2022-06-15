@@ -24,14 +24,22 @@ const Event = (props) =>{
 //     console.log(counter)
 //  }
     return(
-<div className="card center" style={{width: "18rem"}}>
-  <img className="card-img-top" src={props.event.imageURL} alt="Card cap"/>
-  <div className="card-body">
-    <h5 className="card-title">{props.event.name}</h5>
-    <p className="card-text">{props.event.description}</p>
-        <App/>
+
+
+        
+<div className="eventCardWrapper col-md-6" >
+    <div className="eventCard ">
+  <img  src={props.event.imageURL} alt="Card cap"/>
+  <div className="eventCardInfo">
+    <h1 >{props.event.name}</h1>
+    <p >{props.event.description}</p>
+
   </div>
+  </div>
+  <App id="voting-counter"/>   
 </div>
+
+
     )
  }
 
@@ -68,13 +76,12 @@ EventsList(){
 render() {
  
     return(
-    <div className="container"> 
-        <div className="mt-4">
+    <div className="container-fluid"> 
         <h4 className="center">Events</h4>
         <h5 className="center">Come join the party.</h5>
-        </div>
-        <div className="d-flex flex-wrap">
+        <div className="eventBody flex-wrap">
         {this.EventsList()}
+
         </div>
     </div>
     )
