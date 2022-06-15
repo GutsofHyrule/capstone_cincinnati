@@ -2,6 +2,7 @@ import React, {Component,  } from "react";
 import "./style.css"
 import {default as App}  from './Counter'
 import axios from 'axios'
+import { BACKEND_URL } from '../config'
 
 
 const Event = (props) =>{
@@ -55,7 +56,7 @@ constructor(props){
 
 
 componentDidMount() {
-    axios.get("http://localhost:5000/events/")
+    axios.get( BACKEND_URL + "events/")
     .then(response => {
         this.setState({ events: response.data})
     })
