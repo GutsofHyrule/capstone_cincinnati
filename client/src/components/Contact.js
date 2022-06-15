@@ -28,6 +28,7 @@ const Contact = () =>{
     </form>
   </div>
 </div>
+// magic comment
 )
   }
 
