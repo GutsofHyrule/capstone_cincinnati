@@ -137,7 +137,7 @@ const handleClick = faqs =>{
     {/* 6 */}
     <div onClick={handleClick}  className="faq">
       <div className="question">
-        <h3>Cincinnati is generally considered a safe city to visit?</h3>
+        <h3>Is Cincinnati  generally considered a safe city to visit?</h3>
         <svg width={15} height={10} viewBox="0 0 42 25">
           <path
             d="M3 3L21 21L39 3"

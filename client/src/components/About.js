@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+import image from "./img/museum.jpg"
 
 const About = () => {
     return (
@@ -16,7 +17,7 @@ const About = () => {
                 </div>
 
         <div>
-
+            
         </div>
             </div>
         </div>

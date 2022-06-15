@@ -1,5 +1,121 @@
 /*Habil stylesheet*/
 
+/* Events page banner */
+
+
+  
+.event-banner {
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-family: Verdana, Geneva, sans-serif;
+  z-index: 0;
+  background-color: rgb(214, 229, 243);
+  margin-left: -1rem;
+}
+
+.event-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  color: #080122;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.event-title-large {
+  height: 130px;
+  margin-left: -5px;
+  opacity: 0.1;
+}
+
+.event-img-container {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: -2.8px;
+  margin-right: -2.8px;
+  width: 10rem;
+  vertical-align: top;
+  border-radius: 0px 0px 5px 5px;
+  animation-name: flow;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  transition-timing-function: cubic-bezier(0,.57,1,.46);
+  box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.5);
+}
+
+.second-animation {
+  animation-delay: -1.5s;
+}
+
+.third-animation {
+  animation-delay: -1s; 
+}
+
+.fourth-animation {
+  animation-delay: -0.5s; 
+}
+
+.fifth-animation {
+  animation-delay: 0s; 
+}
+
+.sixth-animation {
+  animation-delay: 0.5s; 
+}
+  
+.seventh-animation {
+  animation-delay: 1s;
+}
+
+.event-img {
+  object-fit: cover;
+  width: 1000rem;
+  height: 100vh;
+  margin-top: -60px;
+}
+
+.nba {
+  margin-top: -20px;
+}
+
+@keyframes flow {
+  0% {height: 20%; border-radius: 0px 0px 5px 5px;}
+  50% {height: 90%; border-radius: 0px 0px 100px 100px;}
+  100% {height: 20%; border-radius: 0px 0px 5px 5px;}
+}
+
+@media only screen and (max-width: 1200px) {
+  #img-7 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  #img-1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #img-6 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  #img-5 {
+      display: none;
+    }
+
+}
+/* Event page banner end */
+
 .places-banner{
   width: 100vw;
   height: 70vh;
@@ -10,6 +126,15 @@
 
 .blog-post__container{
   width: 100vw;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #eee; */
+  padding: 1rem 1.5rem;
+}
+.event-post__container{
+  width: 80vw;
   height: 70%;
   display: flex;
   align-items: center;
@@ -132,7 +257,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(2, 0, 27);
+  background-color: rgb(214, 229, 243);
   width: 100vw;
   padding: 0% !important;
   margin-left: -12px;
@@ -695,7 +820,7 @@ html{
     padding: 30px 40px;
     background-color: #ffffffee;
     border-radius: 12px;
-    
+     
     width: 80vw;
   }
   
