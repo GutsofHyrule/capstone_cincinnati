@@ -16,10 +16,7 @@ mongoose.connect(uri, { useUnifiedTopology: true ,  useNewUrlParser: true }
   
     console.log("MongoDB is connected");
   })
-  app.get('/events' , (req, res) => {
-    // you can access the query from req.query
-    const event =  Event.find(req.query);
-})
+
   app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     next();
