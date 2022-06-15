@@ -25,6 +25,12 @@ const Footer = () => {
                 <a href='https://github.com/Abdul0626' className="link">GitHub</a>
                 <a href='https://github.com/Abdul0626/karimPortfolio' className="link">Portfolio</a>
             </div>
+        </div>
+        <hr />
+        <div className='copyright text-center mb-0'>
+            <p className='year'>
+                &copy;{new Date().getFullYear()} Capstone 2022 | All rights reserved | Terms of Service | Privacy
+            </p>
         </div>              
     </div>
     )

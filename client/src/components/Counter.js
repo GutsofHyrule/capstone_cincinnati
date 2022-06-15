@@ -6,13 +6,15 @@ const center = {
 
 const btnStyle = {
   paddingRight: '20px',
-  paddingLeft: '20px'
+  paddingLeft: '20px',
+  borderRadius: "20px"
 };
 
 const textStyle = {
   fontSize: '50px',
   padding: '20px',
-  verticalAlign: 'Middle'
+  verticalAlign: 'Middle',
+  color: "white"
 };
 
 function Btn({ children, onClick }) {
