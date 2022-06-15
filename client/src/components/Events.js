@@ -2,7 +2,12 @@ import React, {Component,  } from "react";
 import "./style.css"
 import {default as App}  from './Counter'
 import axios from 'axios'
-
+import img1 from './img/events page/ev-banner-1.png'
+import img2 from './img/events page/ev-banner-2.jpg'
+import img3 from './img/events page/events3'
+import img4 from './img/events page/events4.jpg'
+import img5 from './img/events page/events5.jpg'
+import img6 from './img/events page/events6.png'
 
 const Event = (props) =>{
 //     var counter = 0
@@ -76,8 +81,31 @@ render() {
  
     return(
     <div className="container-fluid"> 
-        <h4 className="center">Events</h4>
-        <h5 className="center">Come join the party.</h5>
+<div className=" event-banner">
+  <h1 className="event-title">Events</h1>
+  <h1 className="event-title event-title-large">Events</h1>
+  <div id="img-1" className="event-img-container">
+    <img className="img" src={img1} />
+  </div>
+  <div className="event-img-container second-animation">
+    <img className="img" src={img2} />
+  </div>
+  <div className="event-img-container third-animation">
+    <img className="img" src={img3} />
+  </div>
+  <div id="img-4" className="event-img-container fourth-animation">
+    <img className="img nba" src={img4} />
+  </div>
+  <div id="img-5" className="event-img-container fifth-animation">
+    <img className="img" src={img5} />
+  </div>
+  <div id="img-6" className="event-img-container sixth-animation">
+    <img className="img" src={img6} />
+  </div>
+  <div id="img-7" className="event-img-container seventh-animation">
+    <img className="img" src={img1} />
+  </div>
+</div>
         <div className="eventBody flex-wrap">
         {this.EventsList()}
 
