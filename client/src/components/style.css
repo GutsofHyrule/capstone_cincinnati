@@ -854,6 +854,14 @@ display: flex;
   /*Spence style sheet*/
   
   /* about */
+
+  .center{
+    font-family:
+  }
+
+  .Nati{
+    font-family: sans-serif;
+  }
   
   .parent {
     display: grid;
@@ -861,7 +869,9 @@ display: flex;
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
     }
+
     
     .div1 { grid-area: 1 / 1 / 3 / 9; 
             background-size: cover;
@@ -873,6 +883,10 @@ display: flex;
     border: solid 2px black ; 
     box-shadow: 5px 5px 10px;
     margin-top:200px;
+    font-family: sans-serif;
+    background-color: white;
+    
+    
   }
   .museum{
     /* height: 50vh; */
