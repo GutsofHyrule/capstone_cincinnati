@@ -34,7 +34,7 @@ const Event = (props) =>{
 
 
         
-<div className="blog-post__container" >
+<div className="event-post__container" >
 <div className="blog-post filterDiv" >
     <div className="blog-post__img ">
   <img  src={props.event.imageURL} alt="Card cap"/>

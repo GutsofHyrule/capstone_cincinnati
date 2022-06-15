@@ -12,7 +12,7 @@
   overflow: hidden;
   font-family: Verdana, Geneva, sans-serif;
   z-index: 0;
-  background-color: rgb(2, 0, 27);
+  background-color: rgb(214, 229, 243);
   margin-left: -1rem;
 }
 
@@ -126,6 +126,15 @@
 
 .blog-post__container{
   width: 100vw;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #eee; */
+  padding: 1rem 1.5rem;
+}
+.event-post__container{
+  width: 80vw;
   height: 70%;
   display: flex;
   align-items: center;
@@ -248,7 +257,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(2, 0, 27);
+  background-color: rgb(214, 229, 243);
   width: 100vw;
   padding: 0% !important;
   margin-left: -12px;
