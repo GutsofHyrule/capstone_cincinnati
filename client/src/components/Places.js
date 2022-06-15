@@ -3,7 +3,7 @@ import "./style.css"
 import axios from 'axios'
 import {default as App} from './Counter'
 import banner from "./img/placesBanner.jpeg"
-
+import { BACKEND_URL } from '../config'
 // import {Card, Button} from 'react-bootstrap'
 
 const Places = (props) => {
@@ -39,7 +39,7 @@ export default class AmusesList extends Component {
 
 
     componentDidMount() {
-        axios.get("http://localhost:5000/amusements/")
+        axios.get(BACKEND_URL+"amusements/")
             .then(response => {
                 this.setState({ amuses: response.data })
             })

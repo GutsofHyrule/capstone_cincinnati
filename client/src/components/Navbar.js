@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 import logo from "./img/logo.png";
 
 export default function Navbar() {
@@ -8,9 +9,9 @@ export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className="navigation">
-      <a id="drop-shadow" href="/" className="brand-name">
+      <Link id="drop-shadow" to="/" className="brand-name">
         <img className="logo" id="drop-shadow" src={logo}></img>
-      </a>
+      </Link>
       <button
         className="hamburger"
         onClick={() => {
@@ -27,22 +28,22 @@ export default function Navbar() {
       >
         <ul>
           <li >
-            <a  className='navElement'  href="/">Home</a>
+            <Link  className='navElement'  to="/">Home</Link>
           </li>
           <li>
-            <a   className='navElement'  href="/about">About</a>
+            <Link   className='navElement'  to="/about">About</Link>
           </li>
           <li>
-            <a  className='navElement'  href="/contact">Contact</a>
+            <Link  className='navElement'  to="/contact">Contact</Link>
           </li>
           <li>
-            <a   className='navElement' href="/amusements">Places</a>
+            <Link   className='navElement' to="/amusements">Places</Link>
           </li>
           <li>
-            <a  className='navElement'  href="/events">Events</a>
+            <Link  className='navElement'  to="/events">Events</Link>
           </li>
           <li>
-            <a  className='navElement'  href="/FAQs">FAQs</a>
+            <Link  className='navElement'  to="/FAQs">FAQs</Link>
           </li>
         </ul>
       </div>
