@@ -4,35 +4,30 @@ import "./style.css"
 const Contact = () =>{
 
   return(
-<div className= 'container-fluid p-0'>
-<div class="hero">
-    <form class="form"> 
-      <div class="row-1">
-        <div class="input-group">
-          <input type="text" id= "name" required/>
-          <label for=""><i className="fa-solid fa-user"></i>Your Name</label>
-          </div>
-    
-          <div className="input-group">
-            <input type="text" id= "number" required/>
-            <label for=""><i className="fa-solid fa-phone"></i>Phone number</label>
-            </div>
+<div>
+  <div class="contact-form-wrapper d-flex justify-content-center">
+    <form action="#" class="contact-form">
+      <h5 class="title">Contact us</h5>
+      <p class="description">Get in contact with our team or leave a comment about your experience!
+      </p>
+      <div>
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required/>
       </div>
-
-        <div className="input-group">
-          <input type="text" id= "email" required/>
-          <label for=""><i className="fa-solid fa-envelope"></i>Email</label>
-          </div>
-
-          <div className="input-group">
-            <textarea id="message" rows="50" required></textarea>
-            <label for=""><i className="fa-solid fa-message"></i>Your Message</label>
-            </div>
-
-        <button type="submit" className="button">Submit</button>
+      <div>
+        <input type="number" class="form-control rounded border-white mb-3 form-input" placeholder="Phone Number" required/>
+      </div>
+      <div>
+        <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required/>
+      </div>
+      <div>
+        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
+      </div>
+      <div class="submit-button-wrapper">
+        <input type="submit" value="Send"/>
+      </div>
     </form>
   </div>
-  </div>
+</div>
 )
   }
 
