@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.logo{
+    width: 20rem;
+    height: 5rem;
+    margin-left: 10%;
+    -webkit-filter: drop-shadow(5px 5px 30px #000000);
+    filter: drop-shadow(1px 1px 50px #a7a7a7);
+}
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    /* padding: 0.5rem 0rem; */
+    background: linear-gradient( to right, rgb(255, 255, 255) 15% ,rgba(226, 226, 226, 0.829) 33%,rgb(189, 189, 189)80%);
+    color: rgb(0, 0, 0) !important;
+    box-shadow:  2px 2px 5px rgba(9, 9, 9, 0.9);
+    
+  }
+  .bg-active{
+    background: #000;
+      
+  }
+  .brand-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+    transition: ease-in-out 1s;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+    height: 6rem;
+
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+    height: 6rem;
+    text-align: center;
+    /* margin-top: -1rem; */
+    justify-content: flex-end;
+
+  }
+
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 6rem;
+    color: rgb(4, 0, 20);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    transition:ease-out 0.3s;
+  }
+  .navigation-menu li a:hover{
+      background-color: #010011;
+      color: #fdfdfd;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 2px 2px 10px black;
+  }
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+
+    border-radius: 10px;
+    background-color: #0105144f;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transition: ease-out 0.5s;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .fa-bars{
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem;
+    transform: translateY(-25%);
+  }
+  .hamburger:hover {
+    background-color: #f7f8ff;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navigation-menu ul {
+        display: flex;
+      flex-direction: column;
+      position: absolute;
+      justify-content: flex-end;
+      transition: ease-in-out 1s;
+      top: 6rem;
+      right: 0;
+      width: 50%;
+      height: calc(100vh - 60px);
+      background-color: white;
+      border-top: 1px solid black;
+      display: none;
+      z-index: 100;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+        width: 50vw;
+        /* transition: ease-in-out 1s; */
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      /* transition: ease-in-out 1s; */
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: rgb(110, 110, 110);
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+      transition: ease-in-out 1s;
+    }
+  }
+  
