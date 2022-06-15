@@ -1,26 +1,51 @@
-import React from 'react'
-import { Link, NavLink, withRouter } from 'react-router-dom'
-import Logo from './img/logo.png'
-import "./style.css"
+import { useState } from "react";
+import "./navbar.css";
+import logo from "./img/logo.png";
 
+export default function Navbar() {
 
-const Navbar = () => {
-    return (
-        <nav className='nav-wrapper '>
-
-            <div className="container " id='navbar'>
-           <img className='cincy-logo left' src={Logo} alt=""></img>
-                <ul className='right'>
-                    <li className='right1'><Link className="links"to='/'>Home</Link></li>
-                    <li className='right1'><Link className="links"to='/about'>About</Link></li>
-                    <li className='right1'><Link className="links"to='/contact'>Contact</Link></li>
-                    <li className='right1'><Link className="links"to='/amusements'>Places</Link></li>
-                    <li className='right1'><Link className="links"to='/FAQs'>FAQs</Link></li>
-                    <li className='right1'><NavLink className="links"to='/events'>Events</NavLink></li>
-                </ul>
-            </div>
-        </nav>
-    )
+ 
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  return (
+    <nav className="navigation">
+      <a id="drop-shadow" href="/" className="brand-name">
+        <img className="logo" id="drop-shadow" src={logo}></img>
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* icon from Heroicons.com */}
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li >
+            <a  className='navElement'  href="/">Home</a>
+          </li>
+          <li>
+            <a   className='navElement'  href="/about">About</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/contact">Contact</a>
+          </li>
+          <li>
+            <a   className='navElement' href="/amusements">Places</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/events">Events</a>
+          </li>
+          <li>
+            <a  className='navElement'  href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
-
-export default withRouter(Navbar)
