@@ -675,14 +675,14 @@ html{
   
   /*Karim style sheet*/
   /*Contact page*/
-  body {
+  .contacts {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100vh;
     background-image: url(img/city.jpg);
     background-position: center;
     background-size: cover;
-    
+    display: flex;
     align-items: center;
     justify-content: center;
   }

@@ -4,7 +4,7 @@ import "./style.css"
 const Contact = () =>{
 
   return(
-<div>
+<div className='contacts'>
   <div class="contact-form-wrappers d-flex justify-content-center">
     <form action="#" class="contact-forms">
       <h5 class="title">Contact us</h5>
