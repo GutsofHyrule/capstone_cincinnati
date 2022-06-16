@@ -1032,7 +1032,7 @@ display: flex;
     
   }
 
-  .container-fluid{
+  .about-bg{
     background-image: url(img/union.jpg);
     display: flex;
     background-position: center;
